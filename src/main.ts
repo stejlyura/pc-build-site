@@ -1,4 +1,4 @@
-import '@/assets/_main.sass'
+import '@/assets/_main.scss'
 import '@/assets/_normalize.scss'
 
 import { createApp } from 'vue'
