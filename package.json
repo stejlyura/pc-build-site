@@ -1,6 +1,6 @@
 {
   "name": "driveon",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "type": "module",
   "scripts": {
@@ -8,7 +8,9 @@
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
-    "type-check": "vue-tsc --build"
+    "type-check": "vue-tsc --build",
+    "release:patch": "npm version patch && git push"
+
   },
   "dependencies": {
     "sass": "^1.88.0",
