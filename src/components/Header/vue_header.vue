@@ -6,10 +6,11 @@
             <li><a href="#">Features</a></li>
             <li><a href="#">Pricing</a></li>
             <li><a href="#">Contact</a></li>
+            <li><button>Build your own</button></li>
         </ul>
     </header>
 </template>
 
 <style scoped lang="scss">
-    @use '_vue_header.sass';
+    @use '_vue_header.scss';
 </style>

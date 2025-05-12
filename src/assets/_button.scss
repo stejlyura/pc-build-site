@@ -1,0 +1,15 @@
+button {
+  background-color: #172A48; // темно-синий
+  color: #ffffff; // белый текст
+  padding: 0.5rem 1.25rem;
+  border: none;
+  border-radius: 0.5rem; // скругление углов
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #0f1a2f; // чуть темнее при наведении
+  }
+}
