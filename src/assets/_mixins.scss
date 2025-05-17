@@ -1,4 +1,4 @@
-button {
+@mixin forButton {
   background-color: #172A48; // темно-синий
   color: #ffffff; // белый текст
   padding: 0.5rem 1.25rem;
@@ -12,4 +12,8 @@ button {
   &:hover {
     background-color: #0f1a2f; // чуть темнее при наведении
   }
+}
+
+@mixin buttonStyle {
+    background-color: #172A48;
 }

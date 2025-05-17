@@ -1,13 +1,20 @@
 <template>
     <header>
         <h1>DriveOn</h1>
-        <ul>
-            <li><a href="#">Models</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><button>Build your own</button></li>
-        </ul>
+        <div class="menu-list">
+            <div class="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a href="#">Models</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><button>Build your own</button></li>
+            </ul>
+        </div>
     </header>
 </template>
 

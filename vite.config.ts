@@ -20,7 +20,7 @@ export default defineConfig({
       scss: {
         additionalData: `
         @use "@/assets/_variables.scss" as *;
-        @use "@/assets/_button.scss" as *;
+        @use "@/assets/_mixins.scss" as mixins;
         `
       }
     }

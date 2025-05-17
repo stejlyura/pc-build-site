@@ -16,6 +16,7 @@ header {
 
 @media (max-width: 700px){
     header{
+        display: block;
         h1 {
             font-size: 4em;
             margin: 0;
@@ -24,17 +25,21 @@ header {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        ul{
-            width: 100%;
-            flex-direction: column;
-            li{
-                width: 100%;
-            }
-            li:not(:last-child) {
-                display: none;
-            }
-            :last-child{
-                width: 70%;
+        .menu-list{
+            position: absolute;
+            .burger-menu{
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+                span{
+                    width: 100%;
+                    height: 18%;
+                    background-color: var(--main-blue);
+                    @include buttonStyle;
+                }
             }
         }
     }
