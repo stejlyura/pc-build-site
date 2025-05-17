@@ -13,3 +13,29 @@ header {
         }
     }
     }
+
+@media (max-width: 700px){
+    header{
+        h1 {
+            font-size: 4em;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        ul{
+            width: 100%;
+            flex-direction: column;
+            li{
+                width: 100%;
+            }
+            li:not(:last-child) {
+                display: none;
+            }
+            :last-child{
+                width: 70%;
+            }
+        }
+    }
+}

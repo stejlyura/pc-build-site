@@ -14,3 +14,7 @@
 <style scoped lang="scss">
     @use '_vue_header.scss';
 </style>
+
+<script>
+    import './header.ts'
+</script>

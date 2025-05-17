@@ -1,9 +1,9 @@
-<script setup lang="ts">
-    import vueHeader from './components/Header/vue_header.vue'
+<script setup>
+  import VueHeader from './components/Header/vueHeader.vue';
 </script>
 
 <template>
-    <vueHeader></vueHeader>
+  <VueHeader />
 </template>
 
 <style scoped lang="sass">
