@@ -3,7 +3,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    ul{
+    .ul-list{
         display: flex;
         li{
             list-style: none;
@@ -17,20 +17,21 @@ header {
 
 @media (max-width: 700px){
     header{
-        display: block;
-        h1 {
-            font-size: 4em;
-            margin: 0;
-            margin-bottom: 20px;
-        }
-        justify-content: center;
+        padding: 10px 6px;
+        display: flex;
+        justify-content: space-between;
         align-items: center;
-        flex-direction: column;
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
         .menu-list{
-            position: absolute;
+            position: relative;
+            display: flex;
+            flex-direction: column;
             .burger-menu{
-                width: 50px;
-                height: 50px;
+                width: 30px;
+                height: 30px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -41,6 +42,12 @@ header {
                     background-color: var(--main-blue);
                 }
             }
+        }
+        .ul-list {
+            display: none;
+        }
+        .ul-list.active{
+            display: block;
         }
     }
 }

@@ -2,12 +2,12 @@
     <header>
         <h1>DriveOn</h1>
         <div class="menu-list">
-            <div class="burger-menu">
+            <div class="burger-menu" data-js-burger-menu>
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-            <ul>
+            <ul class="ul-list" data-js-ul-list>
                 <li><a href="#">Models</a></li>
                 <li><a href="#">Features</a></li>
                 <li><a href="#">Pricing</a></li>
@@ -24,4 +24,5 @@
 
 <script>
     import './header.ts'
+    import { showMenu } from './header.ts'
 </script>
