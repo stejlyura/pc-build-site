@@ -1,16 +1,7 @@
 <template>
     <header>
         <h1>DriveOn</h1>
-        <div class="header-list">
-            <a href="#">Lease</a>
-            <a href="#" class="list-midle">Rent</a>
-            <a href="#">Lease</a>
-        </div>
-        <div class="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+        <button>PC confugurator</button>
     </header>
 </template>
 

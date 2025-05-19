@@ -5,30 +5,4 @@ header{
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    .header-list{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .burger{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: column;
-        width: 50px;
-        height: 50px;
-        .header-list{
-            list-midle{
-                
-            }
-        }
-        span{
-            display: block;
-            background-color: var(--main-blue);
-            width: 80%;
-            height: 5px;
-            border-radius: 10px;
-        }
-    }
 }
