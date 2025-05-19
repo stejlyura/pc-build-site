@@ -1,19 +1,15 @@
 <template>
     <header>
         <h1>DriveOn</h1>
-        <div class="menu-list">
-            <div class="burger-menu" data-js-burger-menu>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="ul-list" data-js-ul-list>
-                <li><a href="#">Models</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><button>Build your own</button></li>
-            </ul>
+        <div class="header-list">
+            <a href="#">Lease</a>
+            <a href="#" class="list-midle">Rent</a>
+            <a href="#">Lease</a>
+        </div>
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </header>
 </template>
@@ -23,6 +19,4 @@
 </style>
 
 <script>
-    import './header.ts'
-    import { showMenu } from './header.ts'
-</script>
+</script>   
