@@ -1,6 +1,6 @@
 <template>
     <header>
-        <h1>DriveOn</h1>
+        <a href="#"><h1>DriveOn</h1></a>
         <button>PC confugurator</button>
     </header>
 </template>
