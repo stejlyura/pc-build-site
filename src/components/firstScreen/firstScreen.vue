@@ -6,6 +6,7 @@
             <h3>X4 memory size</h3>
             <h3>Boost in games</h3>
         </div>
+        <img src="./img/videocard.png" alt="videocard photo">
     </div>
 </template>
 
