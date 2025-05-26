@@ -1,5 +1,5 @@
 type Product = {
-    brand: string;
+    brand: "Montory"; //check product-list
     name: string;
     price: number;
     description: string;
@@ -8,7 +8,6 @@ type Product = {
 //{brand: "", name: "", price: 900, description: ""}
 
 export const products: Product[] = [
-    {brand: "", name: "", price: 900, description: ""},
-    {brand: "", name: "", price: 900, description: ""}
+    {brand: "Montory", name: "3770", price: 399, description: "Great videocard"},
 ]
 

@@ -1,14 +1,8 @@
 [
   {
-    "brand": "",
-    "name": "",
-    "price": 900,
-    "description": ""
-  },
-  {
-    "brand": "",
-    "name": "",
-    "price": 900,
-    "description": ""
+    "brand": "Montory",
+    "name": "3770",
+    "price": 399,
+    "description": "Great videocard"
   }
 ]
