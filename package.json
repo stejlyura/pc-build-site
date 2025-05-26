@@ -10,7 +10,8 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
     "release:patch": "npm version patch && git push",
-    "generate:db": "ts-node scripts/generate-db.ts"
+    "build:scripts": "tsc -p tsconfig.scripts.json",
+    "generate:db": "npm run build:scripts && node dist/scripts/generate-db.js"
   },
   "dependencies": {
     "sass": "^1.88.0",
