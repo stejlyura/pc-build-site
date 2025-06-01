@@ -22,7 +22,7 @@
     import {ref, onMounted} from 'vue'
     
     type Product = {  //check products in data
-    brand: "Montory";
+    brand: string;
     name: string;
     price: number;
     description: string;
