@@ -1,7 +1,7 @@
 .productList {
     width: 100%;
     min-height: 50vh;
-    background-color: aqua;
+    background-color: var(--white);
     display: grid;
     grid-template-columns: repeat(6, 1fr);
 }
