@@ -4,12 +4,15 @@
 
 
 <template>
-  <h1>{{ products }}</h1>
     <div class="productList">
         <div class="card" v-if="products.length > 0" v-for="product in products" :key="product.name">
-          <div class="discription">
-            <h1>{{ products[0].brand + ' ' + products[0].name}}</h1>
-            <h2>{{ products[0].price }}</h2>
+          <img :src="product.image" alt="" width="100%" height="200px">
+          <div class="disc-button">
+            <div class="discription">
+              <h1>{{ product.brand + ' ' + product.name}}</h1>
+              <h2>{{ product.price }}</h2>
+            </div>
+            <button>Add to cart</button>
           </div>
         </div>
     </div>
@@ -23,6 +26,7 @@
     name: string;
     price: number;
     description: string;
+    image: string;
 }
 
 const products = ref<Product[]>([])
@@ -41,5 +45,5 @@ onMounted(async () => {
     isLoading.value = false;
   }
 })
-console.log(products)
+//console.log(products)
 </script>
