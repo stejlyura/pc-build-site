@@ -2,6 +2,8 @@
     width: 100%;
     min-height: 50vh;
     background-color: aqua;
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 
 .card{

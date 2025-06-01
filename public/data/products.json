@@ -3,6 +3,13 @@
     "brand": "Montory",
     "name": "3770",
     "price": 399,
-    "description": "Great videocard"
+    "description": "Great videocard",
+    "image": "./public/images/Montory3770.png"
+  },
+  {
+    "brand": "Montory",
+    "name": "3770 Pro",
+    "price": 499,
+    "description": "Great videocard with more memory"
   }
 ]

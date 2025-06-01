@@ -4,10 +4,9 @@
 
 
 <template>
-    <div class="productList" v-if="products.length > 0">
-        <h1>{{ products }}</h1>
-        <div class="card">
-          <div class="image"></div>
+  <h1>{{ products }}</h1>
+    <div class="productList">
+        <div class="card" v-if="products.length > 0" v-for="product in products" :key="product.name">
           <div class="discription">
             <h1>{{ products[0].brand + ' ' + products[0].name}}</h1>
             <h2>{{ products[0].price }}</h2>
