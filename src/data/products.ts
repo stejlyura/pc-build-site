@@ -1,15 +1,7 @@
 type Product = {
-    brand: string; //check product-list
-    name: string;
-    socket?: string | "J100"| "ML2";
-    price: number;
-    description: string;
-    image: string;
-}
-type NewProduct = {
     brand: string;
     name: string;
-    type: "GPU" | "CPU" | "RAM" | "SSD" | "HDD" | "PSU" | "CASE" | "COOLER";
+    type: "GPU" | "CPU" | "RAM" | "SSD" | "HDD" | "PSU" | "CASE" | "COOLER" | "motherboard";
     socket?: string | "J100"| "ML2";
     price: number;
     description: string;
@@ -19,7 +11,7 @@ type NewProduct = {
 
 //{brand: "", name: "", price: 900, description: ""}
 
-export const products: NewProduct[] = [
+export const products: Product[] = [
     {brand: "Montory", name: "3770", type: "GPU", price: 399, description: "Great videocard", image: "/data/1.png"},
     {brand: "Montory", name: "3770 Pro", type: "GPU", price: 499, description: "Great videocard with more memory", image: "/data/1.png"},
     {brand: "Montory", name: "3750", type: "GPU", price: 270, description: "Great videocard with even more memory", image: "/data/2.png"},
