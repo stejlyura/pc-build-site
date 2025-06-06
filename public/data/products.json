@@ -99,5 +99,23 @@
     "price": 629,
     "description": "Гражданский ИИ-процессор нового поколения, созданный на базе архитектуры NeuralCore",
     "image": "/data/15.png"
+  },
+  {
+    "brand": "Jintek",
+    "name": "Nova M360",
+    "type": "motherboard",
+    "socket": "J100",
+    "price": 199,
+    "description": "Материнская плата для процессоров J100 с поддержкой PCIe 4.0 и DDR4",
+    "image": "/data/Jm.png"
+  },
+  {
+    "brand": "Zernar",
+    "name": "Sentinel Z790-P",
+    "type": "motherboard",
+    "socket": "ML2",
+    "price": 299,
+    "description": "Материнская плата для процессоров ML2 с поддержкой PCIe 5.0 и DDR5",
+    "image": "/data/Zm.png"
   }
 ]

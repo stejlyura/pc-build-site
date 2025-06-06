@@ -24,6 +24,8 @@ export const products: Product[] = [
     {brand: "Jintek", name: "StormFox X10", type: "CPU", socket:"J100", price: 359, description: "Максимум в своём классе. Для стримеров, монтажёров и хардкорных геймеров", image: "/data/11.png"},
     {brand: "Zernar", name: "Helios G47", type: "CPU", socket:"ML2", price: 429, description: "Геймерский флагман с архитектурой Z-Stream, адаптированной под высокочастотные игры, стриминг и конкурентный киберспорт", image: "/data/14.png"},
     {brand: "Zernar", name: "Neuron C61-AI", type: "CPU", socket:"ML2", price: 629, description: "Гражданский ИИ-процессор нового поколения, созданный на базе архитектуры NeuralCore", image: "/data/15.png"},
+    {brand: "Jintek", name: "Nova M360", type: "motherboard", socket:"J100", price: 199, description: "Материнская плата для процессоров J100 с поддержкой PCIe 4.0 и DDR4", image: "/data/Jm.png"},
+    {brand: "Zernar", name: "Sentinel Z790-P", type: "motherboard", socket: "ML2", price: 299, description: "Материнская плата для процессоров ML2 с поддержкой PCIe 5.0 и DDR5", image: "/data/Zm.png"},
 ]
 
 

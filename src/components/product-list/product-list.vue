@@ -21,13 +21,15 @@
 <script setup lang="ts">
     import {ref, onMounted} from 'vue'
     
-    type Product = {  //check products in data
-    brand: string;
-    name: string;
-    price: number;
-    description: string;
-    image: string;
-}
+  type Product = {
+      brand: string;
+      name: string;
+      type: "GPU" | "CPU" | "RAM" | "SSD" | "HDD" | "PSU" | "CASE" | "COOLER" | "motherboard";
+      socket?: string | "J100"| "ML2";
+      price: number;
+      description: string;
+      image: string; 
+  }
 
 const products = ref<Product[]>([])
 const isLoading = ref(true)
