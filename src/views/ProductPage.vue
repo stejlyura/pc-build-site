@@ -27,7 +27,7 @@
 </template>
 
 <script setup lang="ts">
-    import VueHeader from '@/components/Header/vueHeader.vue';
+import VueHeader from '@/components/Header/vueHeader.vue';
 import { inject, ref, type Ref } from 'vue';
 import { useRoute } from 'vue-router'
 

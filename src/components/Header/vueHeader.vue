@@ -3,7 +3,11 @@
         <router-link to="/">
             <h1>DriveOn</h1>
         </router-link>
-        <button>PC confugurator</button>
+
+        <router-link to='/configurator'>
+            <button>PC confugurator</button>
+        </router-link>
+
     </header>
 </template>
 
@@ -12,4 +16,6 @@
 </style>
 
 <script>
+import router from '@/router';
+
 </script>   
