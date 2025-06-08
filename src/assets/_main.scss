@@ -26,17 +26,19 @@ html, body {
  }
 
 button {
-   background-color: #172A48; // темно-синий
-  color: #ffffff; // белый текст
+   background-color: var(--white); // темно-синий
+  color: var(--main-blue); // белый текст
   padding: 0.5rem 1.25rem;
-  border: none;
+  border: solid;
   border-radius: 0.5rem; // скругление углов
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  border-color: var(--main-blue);
 
   &:hover {
     background-color: #0f1a2f; // чуть темнее при наведении
+    color: var(--white); // белый текст при наведении
   }
 }
