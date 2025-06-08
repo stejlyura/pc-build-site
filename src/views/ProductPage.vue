@@ -1,28 +1,29 @@
 <template>
     <VueHeader />
-    
+    <div v-if="product">
+        <h1>{{ product }}</h1>
+        <div>
+            <img :src="product.image" alt="">
+        </div>
 
-    <div v-if="products">
-        <h1>{{ products }}</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
     <div v-else>
         <h1>Oh no no no</h1>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </template>
 
 <script setup lang="ts">

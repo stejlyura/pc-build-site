@@ -1,6 +1,8 @@
 <template>
     <header>
-        <a href="#"><h1>DriveOn</h1></a>
+        <router-link to="/">
+            <h1>DriveOn</h1>
+        </router-link>
         <button>PC confugurator</button>
     </header>
 </template>
