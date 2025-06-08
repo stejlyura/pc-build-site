@@ -6,7 +6,9 @@
 <template>
     <div class="productList">
         <div class="card" v-if="products.length > 0" v-for="product in products" :key="product.name">
-          <img :src="product.image" alt="" width="100%" height="200px">
+          <div class="product-img">
+           <img :src="product.image" alt="" width="100%" height="200px">
+          </div>
           <div class="disc-button">
             <div class="discription">
               <h1>{{ product.brand + ' ' + product.name}}</h1>
