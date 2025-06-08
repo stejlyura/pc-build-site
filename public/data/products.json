@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "brand": "Montory",
     "name": "3770",
     "type": "GPU",
@@ -8,6 +9,7 @@
     "image": "/data/1.png"
   },
   {
+    "id": 2,
     "brand": "Montory",
     "name": "3770 Pro",
     "type": "GPU",
@@ -16,6 +18,7 @@
     "image": "/data/1.png"
   },
   {
+    "id": 3,
     "brand": "Montory",
     "name": "3750",
     "type": "GPU",
@@ -24,6 +27,7 @@
     "image": "/data/2.png"
   },
   {
+    "id": 4,
     "brand": "Kenzai",
     "name": "MX 2025",
     "type": "GPU",
@@ -32,6 +36,7 @@
     "image": "/data/2.png"
   },
   {
+    "id": 5,
     "brand": "Kenzai",
     "name": "NS 2025",
     "type": "GPU",
@@ -40,6 +45,7 @@
     "image": "/data/5.png"
   },
   {
+    "id": 6,
     "brand": "Kenzai",
     "name": "RS 2025 ",
     "type": "GPU",
@@ -48,6 +54,7 @@
     "image": "/data/5.png"
   },
   {
+    "id": 7,
     "brand": "Kenzai",
     "name": "Aizetsu",
     "type": "GPU",
@@ -56,6 +63,7 @@
     "image": "/data/aizetsu.png"
   },
   {
+    "id": 8,
     "brand": "Jintek",
     "name": "RedTiger 7X",
     "type": "CPU",
@@ -65,6 +73,7 @@
     "image": "/data/12.png"
   },
   {
+    "id": 9,
     "brand": "Jintek",
     "name": "JadeCore 9P",
     "type": "CPU",
@@ -74,6 +83,7 @@
     "image": "/data/13.png"
   },
   {
+    "id": 10,
     "brand": "Jintek",
     "name": "StormFox X10",
     "type": "CPU",
@@ -83,6 +93,7 @@
     "image": "/data/11.png"
   },
   {
+    "id": 11,
     "brand": "Zernar",
     "name": "Helios G47",
     "type": "CPU",
@@ -92,6 +103,7 @@
     "image": "/data/14.png"
   },
   {
+    "id": 12,
     "brand": "Zernar",
     "name": "Neuron C61-AI",
     "type": "CPU",
@@ -101,6 +113,7 @@
     "image": "/data/15.png"
   },
   {
+    "id": 13,
     "brand": "Jintek",
     "name": "Nova M360",
     "type": "motherboard",
@@ -110,6 +123,7 @@
     "image": "/data/Jm.png"
   },
   {
+    "id": 14,
     "brand": "Zernar",
     "name": "Sentinel Z790-P",
     "type": "motherboard",
