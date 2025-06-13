@@ -20,10 +20,11 @@ export default defineConfig({
       scss: {
         additionalData: `
         @use "@/assets/_variables.scss" as *;
-        @use "@/assets/_mixins.scss" as *;
+
         @use "@/fonts/_fonts.scss" as *;
         `
       }
     }
   }
 })
+        /* @use "@/assets/_mixins.scss" as *; */

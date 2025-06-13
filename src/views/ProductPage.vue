@@ -5,21 +5,6 @@
         <div>
             <img :src="product.image" alt="">
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
     <div v-else>
         <h1>Oh no no no</h1>
