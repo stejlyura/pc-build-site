@@ -6,8 +6,13 @@
     <VueHeader />
     <div class="confugurator-body">
        <div class="pc">
-        <h3>CPU</h3>
-        <div class="dropdown" @click="CPU_isOpen = !CPU_isOpen "></div>
+            <h3>CPU</h3>
+            <DropDown 
+                :items = "products"
+                type="CPU"
+                label="Select CPU"
+                @select="CPU_selectedItem = $event"
+            />
        </div> 
        <div class="c2">.</div>
        <div class="c3">.</div>
@@ -27,6 +32,7 @@
 
 <script setup lang="ts">
     import VueHeader from '@/components/Header/vueHeader.vue';
+    import DropDown from '@/components/dropDown/dropDown.vue';
     import { inject, ref, type Ref } from 'vue';
 
     type Product = {
@@ -41,7 +47,7 @@
     }
 
     const products = inject<Ref<Product[]>>('products', ref([]))
+    const CPU_selectedItem = ref<Product | null>(null)
 
-    const CPU_selectedItem = ref<null | typeof products>(null)
-    const CPU_isOpen = ref(false)
+
 </script>
