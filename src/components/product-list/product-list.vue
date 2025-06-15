@@ -11,8 +11,11 @@
           </div>
           <div class="disc-button">
             <div class="discription">
-              <h1>{{ product.brand + ' ' + product.name}}</h1>
-              <h2>{{ product.price }}</h2>
+              <!-- <h1>{{ product.brand + ' ' + product.name}}</h1>
+              <h2>{{ product.price }}</h2> -->
+              <h1>{{ product.brand }}</h1>
+              <h3>{{ product.name }}</h3>
+              <p>{{ product.price }}</p>
             </div>
             <button>Add to cart</button>
           </div>

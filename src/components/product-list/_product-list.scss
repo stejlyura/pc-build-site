@@ -26,6 +26,9 @@
     &:hover {
     transform: translateY(-5px);
     }
+    h1 {
+        color: var(--main-dark-blue);   
+    }
     .product-img{
         cursor: pointer;
         //padding: 20px;
@@ -37,6 +40,14 @@
         margin-bottom: 1rem;
     }
     .disc-button{
+        width: 80%;
         text-align: center;
+    }
+    span {
+        color:var(--main-blue);
+    }
+    .discription{
+        width: 80%;
+        padding-bottom: 20px;
     }
 }
