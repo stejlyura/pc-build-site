@@ -27,6 +27,7 @@ export const products: Product[] = [
     {id: 12, brand: "Zernar", name: "Neuron C61-AI", type: "CPU", socket:"ML2", price: 629, description: "Гражданский ИИ-процессор нового поколения, созданный на базе архитектуры NeuralCore", image: "/data/15.png"},
     {id: 13, brand: "Jintek", name: "Nova M360", type: "motherboard", socket:"J100", price: 199, description: "Материнская плата для процессоров J100 с поддержкой PCIe 4.0 и DDR4", image: "/data/Jm.png"},
     {id: 14, brand: "Zernar", name: "Sentinel Z790-P", type: "motherboard", socket: "ML2", price: 299, description: "Материнская плата для процессоров ML2 с поддержкой PCIe 5.0 и DDR5", image: "/data/Zm.png"},
+    {id: 15, brand: "Kenzai", name: "Pulse 8GB ", type: "RAM", price: 89, description: "Оперативная память DDR4 с частотой 3200 МГц", image: "/data/ram.png"},
 ]
 
 
