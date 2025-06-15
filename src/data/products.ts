@@ -17,7 +17,7 @@ export const products: Product[] = [
     {id: 2, brand: "Montory", name: "3770 Pro", type: "GPU", price: 499, description: "Great videocard with more memory", image: "/data/1.png"},
     {id: 3, brand: "Montory", name: "3750", type: "GPU", price: 270, description: "Great videocard with even more memory", image: "/data/2.png"},
     {id: 4, brand: "Kenzai", name: "MX 2025", type: "GPU", price: 259, description: "Great videocard for budget gamers", image: "/data/2.png"},
-    {id: 5, brand: "Kenzai", name: "NS 2025", type: "GPU", price: 599   , description: "Great videocard for budget gamers with more memory", image: "/data/5.png"},  
+    {id: 5, brand: "Kenzai", name: "NS 2025", type: "GPU", price: 599   , description: "Great videocard for budget gamers with more memory", image: "/data/4.png"},  
     {id: 6, brand: "Kenzai", name: "RS 2025 ", type: "GPU", price: 899, description: "Great videocard for budget gamers with even more memory", image: "/data/5.png"},
     {id: 7, brand: "Kenzai", name: "Aizetsu", type: "GPU", price: 1799, description: "4k", image: "/data/aizetsu.png"},
     {id: 8, brand: "Jintek", name: "RedTiger 7X", type: "CPU", socket:"J100", price: 270, description: "Оптимальный выбор для геймеров с ограниченным бюджетом", image: "/data/12.png"},
