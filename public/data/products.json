@@ -131,5 +131,14 @@
     "price": 299,
     "description": "Материнская плата для процессоров ML2 с поддержкой PCIe 5.0 и DDR5",
     "image": "/data/Zm.png"
+  },
+  {
+    "id": 15,
+    "brand": "Kenzai",
+    "name": "Pulse 8GB ",
+    "type": "RAM",
+    "price": 89,
+    "description": "Оперативная память DDR4 с частотой 3200 МГц",
+    "image": "/data/ram.png"
   }
 ]

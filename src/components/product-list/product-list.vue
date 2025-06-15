@@ -1,5 +1,5 @@
 <style scoped lang="scss">
-            @use './product-list';
+  @use './product-list';
 </style>
 
 
