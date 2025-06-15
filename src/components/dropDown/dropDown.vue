@@ -4,8 +4,8 @@
                     <span v-if="selectedItem">{{ selectedItem.brand }} {{ selectedItem.name }}</span>
                     <span v-else>{{ label || 'Pick' }}</span>
                 </div>                
-                <ul v-if="isOpen">
-                    <li v-for="product in filteredProducts" :key="product.id" @click.stop="selectItem(product)">
+                <ul v-if="isOpen" class="dropdown-list">
+                    <li v-for="product in filteredProducts" :key="product.id" @click.stop="selectItem(product)" class="li-marker">
                         <img :src="product.image" alt="" width="10px" height="10px">
                         <span>{{ product.brand }} {{ product.name }}</span>
                     </li>
@@ -58,5 +58,16 @@ function selectItem(item: Product) {
 </script>
 
 <style scoped lang="scss">
-    @use "_dropDown.scss";
+    .li-marker{
+      list-style: none;
+      display: flex;
+
+    }
+
+    .dropdown-list{
+      background-color: white;
+      img {
+        height: 100%;
+      }
+    }
 </style>
