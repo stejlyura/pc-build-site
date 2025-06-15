@@ -7,18 +7,16 @@
     <div class="productList">
         <div class="card" v-if="products.length > 0" v-for="product in products" :key="product.id">
           <div class="product-img" @click="goToProduct(product.id)">
-           <img :src="product.image" alt="" width="100%" height="200px">
-          </div>
-          <div class="disc-button">
-            <div class="discription">
-              <!-- <h1>{{ product.brand + ' ' + product.name}}</h1>
-              <h2>{{ product.price }}</h2> -->
-              <h1>{{ product.brand }}</h1>
-              <h3>{{ product.name }}</h3>
-              <p>{{ product.price }}</p>
-            </div>
-            <button>Add to cart</button>
-          </div>
+    <img :src="product.image" alt="" />
+  </div>
+  <div class="disc-button">
+    <div class="description">
+      <h2>{{ product.brand }}</h2>
+      <h3>{{ product.name }}</h3>
+      <p class="price">${{ product.price }}</p>
+    </div>
+    <button class="add-to-cart">Add to cart</button>
+  </div>
         </div>
     </div>
 </template>
