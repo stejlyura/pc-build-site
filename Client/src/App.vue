@@ -1,5 +1,6 @@
 <script setup lang="ts">
   import { reactive, provide, ref, onMounted} from 'vue'
+  import axios from 'axios';
 
     type Product = {
     id: number;
@@ -16,7 +17,7 @@ const products = ref<Product[]>([])
 const isLoading = ref(true)
 const error = ref<null | string>(null)
 
-onMounted(async () => {
+/* onMounted(async () => {
     try {
     const response = await fetch('/data/products.json');
     if (!response.ok) throw new Error('Cant find data');
@@ -27,7 +28,17 @@ onMounted(async () => {
   } finally {
     isLoading.value = false;
   }
+}) */
+
+onMounted(async () =>{
+  try {
+    const { data } = await axios.get<Product[]>('http://localhost:3000/products');
+    products.value = data;
+  } catch (error) {
+    console.error('Ошибка при загрузке продуктов:', error);
+  }
 })
+
 //console.log(products)
 
     provide('products', products)
