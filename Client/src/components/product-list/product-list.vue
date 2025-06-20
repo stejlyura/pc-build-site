@@ -22,7 +22,7 @@
 </template>
 
 <script setup lang="ts">
-  import { inject, ref, type Ref } from 'vue'
+  import { computed, inject, ref, type Ref } from 'vue'
   import { useRouter } from 'vue-router'
   type Product = {
     id: number;
@@ -35,6 +35,17 @@
     image: string; 
 }
   const products = inject<Ref<Product[]>>('products', ref([]))
+  const imgsUrl = inject<string[]>('imgUrl', [])
+
+  const fullImage = computed(() => {
+  if (!imgsUrl) return null;
+
+  const filename = products.value.length > 0 ? products.value[0].image.split('/').pop() || '' : ''; // например "1.png"
+  const match = imgsUrl.find(url => url.endsWith(filename)); // ищем совпадение
+
+  return match ? 'http://localhost:3000/' + match : null;
+
+  });
 
   const router = useRouter()
   function goToProduct(id: number) {

@@ -14,6 +14,7 @@
 }
 
 const products = ref<Product[]>([])
+const imgUrl = ref<string[]>([]);
 const isLoading = ref(true)
 const error = ref<null | string>(null)
 
@@ -34,14 +35,21 @@ onMounted(async () =>{
   try {
     const { data } = await axios.get<Product[]>('http://localhost:3000/products');
     products.value = data;
-  } catch (error) {
-    console.error('Ошибка при загрузке продуктов:', error);
+  } 
+  catch (error) {
+    console.error( error);
   }
+})
+
+onMounted(async ()=>{
+  const { data } = await axios.get('http://localhost:3000/img')
+  imgUrl.value = data
 })
 
 //console.log(products)
 
     provide('products', products)
+    provide('imgUrl', imgUrl)
 
 
 </script>
