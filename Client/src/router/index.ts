@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import Home from '@/views/Home.vue';
 import ProductPage from '@/views/ProductPage.vue';
 import Configurator from '@/views/Configurator.vue';
+import underConstruction from '@/views/underConstruction.vue';
 
 const routes = [
     {
@@ -12,6 +13,9 @@ const routes = [
     },
     {
         path: '/configurator', name: 'Configurator', component: Configurator
+    },
+    {
+        path: '/underDevelop', name: 'underDevelop', component: underConstruction
     }
 ]
 

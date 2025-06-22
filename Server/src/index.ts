@@ -1,4 +1,3 @@
-console.log('🔥 index.ts запущен')
 import express from 'express'
 import { products } from './data/ppp'
 import cors from 'cors';
@@ -22,7 +21,6 @@ async function main() {
     serviceClient(app)
     
     app.listen(PORT, () =>{
-        
     })
 }
 

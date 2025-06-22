@@ -23,7 +23,7 @@
                 </g>
                 </svg>
             </div>
-            <router-link to='/configurator'>
+            <router-link to='/underDevelop'>
                 <button>PC confugurator</button>
             </router-link>
         </div>
