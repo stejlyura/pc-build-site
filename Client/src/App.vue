@@ -30,16 +30,15 @@ const error = ref<null | string>(null)
     isLoading.value = false;
   }
 }) */
-const apiBase = window.location.origin;
-onMounted(async () =>{
+/* onMounted(async () =>{
   try {
-    const { data } = await axios.get<Product[]>(`${apiBase}/products`);
+    const { data } = await axios.get<Product[]>('/api/products');
     products.value = data;
   } 
   catch (error) {
     console.error( error);
   }
-})
+}) */
 
 //console.log(products)
 
