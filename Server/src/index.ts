@@ -7,7 +7,7 @@ import mongoose from 'mongoose';
 require ('dotenv').config();
 
 const app = express();
-const PORT = 3303;
+const PORT = 3300;
 
 async function main() {
   app.use(express.json());
