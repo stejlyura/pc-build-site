@@ -41,7 +41,7 @@
   if (!imgsUrl) return null;
 
   const filename = products.value.length > 0 ? products.value[0].image.split('/').pop() || '' : ''; // например "1.png"
-  const match = imgsUrl.find(url => url.endsWith(filename)); // ищем совпадение
+  const match = imgsUrl.find(url => url.endsWith(filename));
 
   return match ? 'http://localhost:3000/' + match : null;
 

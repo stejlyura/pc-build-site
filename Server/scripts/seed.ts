@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+/* import mongoose from 'mongoose';
 import { Product, products } from '../src/data/ppp'
 import dotenv from 'dotenv';
 dotenv.config();
@@ -21,4 +21,4 @@ async function seed() {
 seed().catch(err => {
   console.error('Err', err)
   process.exit(1)
-})
+}) */

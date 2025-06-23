@@ -1,7 +1,7 @@
 import express from 'express'
 import cors from 'cors';
 import path from 'path'
-import { products } from './data/ppp'
+//import { products } from './data/ppp'
 import {serviceClient} from './elements/client-site'
 import ProductRoutes from './routes/products'
 import mongoose from 'mongoose';
@@ -26,8 +26,13 @@ async function main() {
 
     await mongoose.connect(mongoUrl)
 
-    app.use('/products', ProductRoutes)
-
+    app.use('/api/products', ProductRoutes)
+    
+    
+    app.get('*', (req, res) => {
+        res.sendFile(path.join(__dirname, '../Client/dist/index.html'));
+    });
+    
     serviceClient(app)
     
     app.listen(PORT, () =>{

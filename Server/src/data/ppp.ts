@@ -15,7 +15,7 @@ type Product = {
 
 //{brand: "", name: "", price: 900, description: ""}
 
-export const products: Product[] = [
+/* export const products: Product[] = [
     {id: 1, brand: "Montory", name: "3770", type: "GPU", price: 399, description: "Great videocard", image: "/data/1.png"},
     {id: 2, brand: "Montory", name: "3770 Pro", type: "GPU", price: 499, description: "Great videocard with more memory", image: "/data/1.png"},
     {id: 3, brand: "Montory", name: "3750", type: "GPU", price: 270, description: "Great videocard with even more memory", image: "/data/2.png"},
@@ -31,7 +31,7 @@ export const products: Product[] = [
     {id: 13, brand: "Jintek", name: "Nova M360", type: "motherboard", socket:"J100", price: 199, description: "Материнская плата для процессоров J100 с поддержкой PCIe 4.0 и DDR4", image: "/data/Jm.png"},
     {id: 14, brand: "Zernar", name: "Sentinel Z790-P", type: "motherboard", socket: "ML2", price: 299, description: "Материнская плата для процессоров ML2 с поддержкой PCIe 5.0 и DDR5", image: "/data/Zm.png"},
     {id: 15, brand: "Kenzai", name: "Pulse 8GB ", type: "RAM", price: 89, description: "Оперативная память DDR4 с частотой 3200 МГц", image: "/data/ram.png"},
-]
+] */
 
 
 //npm run generate:db 
