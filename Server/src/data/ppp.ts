@@ -1,3 +1,5 @@
+import mongoose from "mongoose"
+
 type Product = {
     id: number;
     brand: string;
@@ -8,6 +10,7 @@ type Product = {
     description: string;
     image: string; 
 }
+
 
 
 //{brand: "", name: "", price: 900, description: ""}
@@ -32,3 +35,24 @@ export const products: Product[] = [
 
 
 //npm run generate:db 
+
+const productSchema = new mongoose.Schema({
+  brand: { type: String, required: true },
+  name: { type: String, required: true },
+  type: {
+    type: String,
+    enum: ["GPU", "CPU", "RAM", "SSD", "HDD", "PSU", "CASE", "COOLER", "motherboard"],
+    required: true
+  },
+  socket: {
+    type: String,
+    enum: ["J100", "ML2"],
+    required: false
+  },
+  price: { type: Number, required: true },
+  description: { type: String, required: true },
+  image: { type: String, required: true }
+});
+
+export const Product = mongoose.model('Product', productSchema);
+

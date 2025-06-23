@@ -1,13 +1,14 @@
 import express from 'express'
-import { products } from './data/ppp'
 import cors from 'cors';
 import path from 'path'
+import { products } from './data/ppp'
 import {serviceClient} from './elements/client-site'
+import ProductRoutes from './routes/products'
 import mongoose from 'mongoose';
 require ('dotenv').config();
 
 const app = express()
-const PORT = 3000
+const PORT = 3003
 
 async function main() {
 
@@ -18,13 +19,19 @@ async function main() {
  
     app.use('/public', express.static(path.join(__dirname, '../public')))
 
-    app.use('/products', (req,res) =>{
-        res.status(200).json(products)
-    })
+    const mongoUrl = process.env.MONGO_URL;
+    if (!mongoUrl) {
+        throw new Error('Problem with get data from Mongodb');
+    }
+
+    await mongoose.connect(mongoUrl)
+
+    app.use('/products', ProductRoutes)
 
     serviceClient(app)
     
     app.listen(PORT, () =>{
+        console.log(`http://localhost:${PORT}`)
     })
 }
 
